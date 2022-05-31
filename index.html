@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inleiding Programmeren</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>  
+        <header>
+            <nav>
+                <img src="images/logo-black.svg" alt="cpcompany logo">
+            </nav>
+
+            <div class="banner">
+                <img src="images/nature-graphics-desk-v.jpg" alt="banner">
+                <h1>Stel je zomer outfit samen</h1>
+            </div>
+        </header>
+
+        <main>
+
+            <h2>Kies je t-shirt</h2>
+
+            <section>
+
+                <article>
+                    <p id="naamTshirt"></p>
+                    <p id="prijs">€85,00</p>
+
+                    <img id="tshirt" src="images/tshirt-gogglegraphic-zwart.jpg" alt="tshirt">
+                    
+
+                    <!-- De lijst is aangemaakt met javascript -->
+                    <ul class="kleuropties">
+                        
+
+                    </ul>
+                </article>
+
+                <article>
+                    <ul class="naamopties">
+                        <li><img src="images/gogglegraphic.jpg" alt="gogglegraphic"  class='tshirtoptie' data-naam='naam' data-waarde='gogglegraphic'></li>
+                        <li><img src="images/tiedye.jpg" alt="tiedye"  class='tshirtoptie' data-naam='naam' data-waarde='tiedye'></li>
+                        <li><img src="images/tonallogo.jpg" alt="tonallogo"  class='tshirtoptie' data-naam='naam' data-waarde='tonallogo'></li>
+                        <li><img src="images/fleecelogo.jpg" alt="fleecelogo"  class='tshirtoptie' data-naam='naam' data-waarde='fleecelogo'></li>
+                    </ul>
+
+                    <p>Beschrijving<span id="beschrijving"></span></p>
+                </article>
+            </section>
+        </main>
+
+        <!-- Bronnenlijst -->
+        <!-- 1. cpcompany.com voor alle afbeeldingen en beschrijving -->
+        <!-- 2. opdrachten van vorige jaren -->
+        <!-- 3. https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset -->
+
+        <script type="text/javascript" src="javascript/index.js"></script>
+    </body>
+</html>

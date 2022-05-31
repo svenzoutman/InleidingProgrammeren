@@ -1,0 +1,192 @@
+/* CSS Document */
+
+
+/* Fonts */
+
+@font-face {
+	font-family: 'avenir';
+	src: url('../fonts/avenir.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* Custom Properties */
+
+
+/* Light mode */
+:root {
+	--body-bg: #000000;
+	--body-color: #FFFFFF;
+	--border-img: #FFFFFF;
+}
+
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+	:root {
+            --body-bg: #FFFFFF;
+	        --body-color: #000000;
+	        --border-img: #000000;
+	}
+}
+
+/* Styling */
+
+body {
+    font-family: avenir, sans-serif;
+    color: var(--body-color);
+    font-size: 1em;
+    background-color: var(--body-bg);
+    align-items: center;
+    flex-direction: column;
+	position: relative;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+/* Styling Header */
+
+header nav {
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: avenir, sans-serif;
+    font-size: 3em;
+    color: white;
+}
+
+
+
+/* Styling Main */
+
+h2 {
+    font-family: avenir, sans-serif;
+    font-size: 2.5em;
+    position: absolute;
+    right: 10em;
+}
+
+main section:first-of-type {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    margin-left: 0em;
+    margin-right: 8em;
+    max-height: 10em;
+}
+
+#naamTshirt {
+    font-size: 1.5em;
+}
+
+#tshirt {
+    max-height: 35em;
+}
+
+
+#prijs {
+    font-size: 1.5em;
+}
+
+article img {
+    border: 4px grey solid;
+}
+
+img {
+    max-width: 100%;
+}
+
+article:nth-of-type(2) p:last-of-type {
+    font-size: 2em;
+    margin-top: 3em;
+}
+
+main .kleuropties {
+    display: flex;
+    margin: 1em;
+    list-style: none;
+}
+
+main .naamopties {
+    list-style-type: none;
+    display: flex;
+    grid-column-gap: 0;
+    margin-top: 10em;
+    transform: scale(115%);
+    padding-left: 0;
+}
+
+main .naamopties li{
+    justify-content: center;
+    padding: .5em;
+}
+
+main .naamopties li img{
+    border: solid 1px var(--border-img);
+    height: auto;
+    /* width: 10em; */
+}
+
+#beschrijving {
+    display: block;
+    font-family: avenir, sans-serif;
+    font-size: .5em;
+    /* width: 15em; */
+}
+
+main .kleuropties {
+    justify-content: center;
+}
+
+
+main .kleuropties li{
+    margin: .5em;
+}
+
+ul.kleuropties {
+    width: 50%;
+    margin-left: 9em;
+}
+
+ul.kleuropties li {
+    margin: 1em;
+}
+
+ul.kleuropties img {
+    border: var(--border-img) 3px solid;
+    border-radius: 50%;
+}
+
+
+
+/* States */
+
+img.tshirtoptie:hover {
+    border: var(--border-img) 2px solid;
+    cursor: pointer;
+}
+
+img.tshirtoptie:active {
+    border: var(--border-img) 4px solid;
+}
+
+img.tshirtoptie:sele {
+    border: var(--border-img) 3px solid;
+}
+
+
